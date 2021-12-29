@@ -1,2 +1,2 @@
-require "spec"
-require "../src/importmap-lucky"
+require "spectator"
+require "../src/importmap"

@@ -1,39 +1,9 @@
-# importmap-lucky
+# importmap
 
-TODO: Write a description here
-
-## Installation
-
-1. Add the dependency to your `shard.yml`:
-
-   ```yaml
-   dependencies:
-     importmap-lucky:
-       github: your-github-user/importmap-lucky
-   ```
-
-2. Run `shards install`
-
-## Usage
-
-```crystal
-require "importmap-lucky"
-```
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/importmap-lucky/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [Michael Wagner](https://github.com/your-github-user) - creator and maintainer
+## Two usages:
+1. Use your own JSON
+  - This is managed on your own, but you can also use the CLI to vendor stuff for you
+  - If you need to preload any imports, you must use ImportMap and specify each import
+2. Use the libraries ImportMap
+  - This is useful if you just want to use CDNs
+  - You can also use this for your own application JS code
