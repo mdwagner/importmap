@@ -32,6 +32,11 @@ module Importmap
       @import_opts[name] = @import_opts[name].copy_with(preload: true)
     end
 
+    def scope(path, hash) : Nil
+      @json.scopes = Json::ImportScopes.new unless @json.scopes?
+      @json.scopes[path] = hash
+    end
+
     def to_importmap_json
       @json.to_json
     end

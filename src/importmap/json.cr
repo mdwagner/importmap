@@ -8,7 +8,7 @@ module Importmap
     alias ImportScopes = Hash(String, ImportSpecifiers)
 
     property imports : ImportSpecifiers
-    property scopes : ImportScopes?
+    property! scopes : ImportScopes?
 
     def self.with_defaults
       from_json({"imports" => ImportSpecifiers.new}.to_json)
