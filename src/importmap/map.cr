@@ -24,7 +24,7 @@ module Importmap
     end
 
     def pin(name, to : String? = nil, preload = false) : Nil
-      @json.imports[name] = to ? "/#{to}" : "/#{name}.js"
+      @json.imports[name] = to || "/#{name}.js"
       @import_opts[name] = @import_opts[name].copy_with(preload: preload)
     end
 
